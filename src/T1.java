@@ -4,9 +4,9 @@ public class T1
 {
     public static void main(String[] args)
     {
-//        collapseSequences();
-//        test();
-//        higherThanMean();
+        collapseSequences();
+        test();
+        higherThanMean();
         twoDimArr();
     }
     public static void collapseSequences()
@@ -41,10 +41,12 @@ public class T1
         }
     }
     public static void higherThanMean()
-//    כתבו תוכנית אשר קולטת מן המשתמש מספר טבעי n . לאחר מכן, יש לקלוט n מספרים
-//    שלמים נוספים. לבסוף, יש להדפיס את המספרים אשר גבוהים מן הממוצע.
-//    לדוגמה, עבור הקלט 5 וחמשת המספרים הנוספים 1 2 3 4 5 הממוצע הוא 3 ולכן נדפיס
-//    את 4 ו- 5
+    /*
+    כתבו תוכנית אשר קולטת מן המשתמש מספר טבעי n . לאחר מכן, יש לקלוט n מספרים
+    שלמים נוספים. לבסוף, יש להדפיס את המספרים אשר גבוהים מן הממוצע.
+    לדוגמה, עבור הקלט 5 וחמשת המספרים הנוספים 1 2 3 4 5 הממוצע הוא 3 ולכן נדפיס
+    את 4 ו- 5
+    */
     {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -62,15 +64,17 @@ public class T1
         {
             if (arr[i] > mean)
             {
-                output.append(arr[i] + " ");
+                output.append(arr[i]).append(" ");
             }
 
         }
         System.out.print(output);
     }
     public static void twoDimArr()
-    //כתבו קטע קוד אשר מדפיס את האלכסון הראשי, האלכסון המשני ואת המסגרת של מערך
-    //דו-מימדי ריבועי. את המסגרת יש להדפיס עם כיוון השעון החל מתא 0 0 .
+    /*
+    כתבו קטע קוד אשר מדפיס את האלכסון הראשי, האלכסון המשני ואת המסגרת של מערך
+    דו-מימדי ריבועי. את המסגרת יש להדפיס עם כיוון השעון החל מתא 0 0 .
+ */
     {
         int[][] mat = new int[][]{{1, 2, 3, 4},
                                   {5, 6, 7, 8},
@@ -128,9 +132,8 @@ public class T1
         {
             clockWiseFloor.append(floor[i]).append(", ");
         }
-        for (int i = 0; i < left.length; i++)
-        {
-            clockWiseLeft.append(left[i]).append(", ");
+        for (int j : left) {
+            clockWiseLeft.append(j).append(", ");
         }
         System.out.println(mainDiagonal);
         System.out.println(secondDiagonal);
