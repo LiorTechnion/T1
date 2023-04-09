@@ -4,9 +4,9 @@ public class T1
 {
     public static void main(String[] args)
     {
-        //collapseSequences();
-        //test();
-        //higherThanMean();
+//        collapseSequences();
+//        test();
+//        higherThanMean();
         twoDimArr();
     }
     public static void collapseSequences()
@@ -41,10 +41,10 @@ public class T1
         }
     }
     public static void higherThanMean()
-    //כתבו תוכנית אשר קולטת מן המשתמש מספר טבעי n . לאחר מכן, יש לקלוט n מספרים
-    //שלמים נוספים. לבסוף, יש להדפיס את המספרים אשר גבוהים מן הממוצע.
-    //לדוגמה, עבור הקלט 5 וחמשת המספרים הנוספים 1 2 3 4 5 הממוצע הוא 3 ולכן נדפיס
-    //את 4 ו- 5
+//    כתבו תוכנית אשר קולטת מן המשתמש מספר טבעי n . לאחר מכן, יש לקלוט n מספרים
+//    שלמים נוספים. לבסוף, יש להדפיס את המספרים אשר גבוהים מן הממוצע.
+//    לדוגמה, עבור הקלט 5 וחמשת המספרים הנוספים 1 2 3 4 5 הממוצע הוא 3 ולכן נדפיס
+//    את 4 ו- 5
     {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
