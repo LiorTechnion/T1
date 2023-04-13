@@ -4,20 +4,20 @@ import java.util.Scanner;
 public class T1 {
     public static void main(String[] args)
     {
-//    collapseSequences();
-//    test();
-//    higherThanMean();
-//    twoDimArr();
-//    matrixMultiplication();
-//    System.out.println(getIdxOfMax(new int[]{1, 8, 3, 9}));
-//        System.out.println(getDuplication(new int[][]{{1, 2, 3, 4},
-//                                                      {5, 6, 7, 8},
-//                                                      {9, 1, 2, 3},
-//                                                      {4, 5, 8, 8}}));
-//        System.out.println(Arrays.deepToString(nullifyWhenZero(new int[][]{{21, 0, 3, 17},
-//                {9, 5, 7, 8},
-//                {0, 10, 0, 12},
-//                {11, 2, 19, 16}})));  
+    collapseSequences();
+    test();
+    higherThanMean();
+    twoDimArr();
+    matrixMultiplication();
+    System.out.println(getIdxOfMax(new int[]{1, 8, 3, 9}));
+        System.out.println(getDuplication(new int[][]{{1, 2, 3, 4},
+                                                      {5, 6, 7, 8},
+                                                      {9, 1, 2, 3},
+                                                      {4, 5, 8, 8}}));
+        System.out.println(Arrays.deepToString(nullifyWhenZero(new int[][]{{21, 0, 3, 17},
+                {9, 5, 7, 8},
+                {0, 10, 0, 12},
+                {11, 2, 19, 16}})));
     }
 
     public static void collapseSequences()
@@ -33,11 +33,11 @@ public class T1 {
                     if (chr == followingChr) {
                         count += 1;
                     } else {
-                        System.out.print(chr + "" + count);
+                        System.out.print(chr + String.valueOf(count));
                         count = 1;
                     }
                 } else {
-                    System.out.print(chr + "" + count);
+                    System.out.print(chr + String.valueOf(count));
                 }
             }
         }
